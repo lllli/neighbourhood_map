@@ -132,8 +132,8 @@
     var infoWindow;
     var locationSelect;
     var ul;
-    var foursquare_client_ID = 'BWZGHSNYJXSPNUKBBOYJAKI2VJ133W1ASCST12NHUGJTVRYB';
-    var foursquare_client_secret = '2NWUL5T0KGK1AEXG0PW3OYQKVTTZL0ZBVT0YBKZBEZYHAZON';
+    var foursquare_client_ID = 'FU35OUT4KS12OPEWW2PSJVFDGIERJBUXGZMK4HKU15B0EOQG';
+    var foursquare_client_secret = '1TZRDVHNMYKXUNLWTFUI43H341ENIBKITFOS00RSOAK4QQKL';
     var lobster_list = ko.observableArray([]);
     var user_input = ko.observable("");
 
