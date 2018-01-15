@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Place Search</title>
+	<link rel="stylesheet" href="style.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div class="container">
+	<div class="hero-image">
+
+        <div class="yellow">
+            <img src="img/Path%2018.png" width="120%">
+        </div>
+
+        <div class="lobster">
+            <img src="img/Group%203@2x.png"alt="lobster" width="67%">
+        </div>
+        <div class="hero-text">
+            <h1>WHERE</h1>
+            <h1>TO</h1>
+            <h1>EAT</h1>
+        </div>
+    </div>
+	<div class="search-box" id="search-box">
+		<input class="search-input" id="search-input" data-bind="textInput: user_input, valueUpdate: 'afterkeydown'" placeholder="Search for lobsters.."/>
+	</div>
+	<div class="map_and_list" id="map_and_list">
+
+		<div class="result" id="result">
+			<ul class="lobsters" id="lobsters" data-bind="foreach: search_res">
+				<li class="one_lobster" id="one_lobster" data-bind="text: marker.title, click: click_animation"></li>
+			</ul>
+		</div>
+		<div class="map" id="map"></div>
+	</div>
+
+
+	<script src='js/knockout-3.4.2.js'></script>
+	<script src='js/jquery-3.2.1.min.js'></script>
+	<script src='js/lobster.js'></script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=initialize&libraries=places" onerror="error()"></script>
+</div>
+</body>
+</html>

@@ -1,0 +1,114 @@
+body {
+	margin: 0;
+	font-family:'Spectral+SC',sans-serif;
+}
+
+
+.hero-image {
+    /* The image used */
+    background-image: url("img/Group 2@2x.png");
+
+    /* Set a specific height */
+    height: 100%;
+
+    /* Position and center the image to scale nicely on all screens */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    top: 1px;
+}
+
+
+.hero-text {
+    font-size:70px;
+    letter-spacing:1px;
+    line-height:100%;
+    text-align: left;
+    position: relative;
+    top: 300px;
+    left:1100px;
+    transform: translate(-50%, -50%);
+    color: black;
+}
+.lobster{
+    position:absolute;
+    top:50%;
+    left:650px;
+}
+
+.yellow{
+    position:absolute;
+    top:10%;
+    left:400px;
+}
+
+
+
+
+.search-box {
+	width: 100%;
+	display: flex;
+    position:relative;
+    top:50px;
+}
+
+.search-input {
+	flex-grow: 1;
+	height: 50px;
+	font-size: 1em;
+	padding: 5px 20px;
+}
+
+.map_and_list {
+	width: 100%;
+	height: 100%;
+	display: flex;
+}
+
+.result {
+	order: 1;
+	flex-grow: 1;
+	background-color: #ffffff00;
+	postion:relative;
+	top:50px;
+}
+
+.map {
+	order: 2;
+	flex-grow: 4;
+	background-color: #fff;
+	text-align: center;
+	height: 1000px;
+	position:relative;
+	top: 50px;
+}
+
+.lobsters {
+	margin: 0;
+	padding: 0;
+	position:relative;
+	top: 50px;
+}
+
+.one_lobster {
+    margin: 10px;
+    padding: 10px;
+    list-style: none;
+    background-color: #12345678;
+    opacity:0.7
+}
+
+
+@media only screen and (max-device-width : 959px), only screen and (max-width : 959px)  {
+
+.map_and_list {
+	flex-direction: column;
+}
+
+
+.search-input, .result {
+	font-size: 1.5em;
+}
+
+}
