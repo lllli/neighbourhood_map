@@ -8,21 +8,7 @@
 </head>
 <body>
 <div class="container">
-	<div class="hero-image">
-
-        <div class="yellow">
-            <img src="img/Path%2018.png" width="120%">
-        </div>
-
-        <div class="lobster">
-            <img src="img/Group%203@2x.png"alt="lobster" width="67%">
-        </div>
-        <div class="hero-text">
-            <h1>WHERE</h1>
-            <h1>TO</h1>
-            <h1>EAT</h1>
-        </div>
-    </div>
+	<div class="hero-image"></div>
 	<div class="search-box" id="search-box">
 		<input class="search-input" id="search-input" data-bind="textInput: user_input, valueUpdate: 'afterkeydown'" placeholder="Search for lobsters.."/>
 	</div>
@@ -35,12 +21,12 @@
 		</div>
 		<div class="map" id="map"></div>
 	</div>
-
+</div>
 
 	<script src='js/knockout-3.4.2.js'></script>
 	<script src='js/jquery-3.2.1.min.js'></script>
 	<script src='js/lobster.js'></script>
 	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDA6qoUKQ3WJQd4ZxAahhFPM80WJbw-yws&callback=initialize&libraries=places" onerror="error()"></script>
-</div>
+
 </body>
 </html>
